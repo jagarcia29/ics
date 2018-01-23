@@ -19,7 +19,9 @@ const durationSchema = Joi.object().keys({
 
 const contactSchema = Joi.object().keys({
   name: Joi.string(),
-  email: Joi.string().email()
+  email: Joi.string().email(),
+  rsvp: Joi.boolean(),
+  partStat: Joi.string()
 })
 
 const alarmSchema = Joi.object().keys({
